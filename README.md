@@ -1,5 +1,5 @@
 
-# HTMLTestHud
+# HTTPTestHud
 A simple test form for a Corrade bot. Similar to the Test HUD in LSL. https://marketplace.secondlife.com/p/CORRADE-Test-HUD/9191212
 
 If you're not familiar with Corrade bots, check out https://corrade.grimore.org/
