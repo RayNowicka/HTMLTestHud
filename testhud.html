@@ -51,9 +51,6 @@
 
         // This is the stuff that happens...
         function SubmitTheForm(group, password, botURL) {
-            botcommand = "tell";
-            farts = "local";
-            formresult = "{ \"command=tell&message=Hello world!&entity=local\" }";
             formresult = $('#formtextarea').val();
             formresult = formresult.replace(/^\s+|\s+$/g, '');
             formresult = "{ \"" + formresult + "\"}";
