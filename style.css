@@ -1,0 +1,181 @@
+* {
+  /* font-family: "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "HelveticaNeue", "TeXGyreHerosRegular", "Helvetica", "Arial", "Tahoma", "Geneva", sans-serif; */
+  /* font-family: "Courier", sans-serif; */
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  /* text-transform: uppercase; */
+  background-color: black;
+  color: white;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  margin: 1.5rem;
+}
+
+h1 a,
+h1 a:hover,
+h3 a,
+h3 a:hover {
+  text-decoration: none;
+}
+
+th {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 1rem;
+}
+
+button[type=submit], a.fakebutton,
+#notificationBarBottom, #notificationBarBottomFixed {
+  background-color: rgb(46, 46, 46);
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 10px 5px;
+  display:inline-block;
+}
+
+#notificationBarBottomFixed * {
+  background-color: rgb(46, 46, 46);
+  color: white;
+} 
+
+#dialogMenu {
+  background-color: rgb(124, 124, 124);
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 10px 5px;
+}
+
+#dialogMenu pre,
+#dialogMenu p {
+  background-color: rgb(124, 124, 124);
+  color: white;
+}
+
+#dialogMenu button[type=submit] {
+  margin: 5px;
+}
+
+#dialogMenu form {
+  background-color: rgb(124, 124, 124);
+}
+
+form {
+  margin-block-end: 0;
+  text-align: center;
+}
+
+div.sadsmiley {
+  font-size: 1.5rem;
+  transform: rotate(90deg);
+  display: inline-block;
+}
+
+div.maincontainer {
+  margin: 1rem auto;
+  min-width: 275px;
+  text-align: center;
+}
+
+div.remotebtn {
+  display: inline-block;
+}
+
+/* Alert style */
+
+#notificationBarBottomFixed {
+  position: fixed;
+  z-index: 101;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 2.5;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 0px;
+}
+
+#notificationBarBottom {
+  position: fixed;
+  z-index: 101;
+  bottom: -510px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 2.5;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+#dialogMenu {
+  position: fixed;
+  z-index: 101;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1.2;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  15% {
+    transform: translateY(-510px);
+  }
+
+  85% {
+    transform: translateY(-510px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#notificationBarBottom {
+  animation: slideDown 4s ease;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#dialogMenu {
+  animation: slideUp 1s ease-in;
+}
+
+#close {
+  display: none;
+}
+.spacer {
+  height:500px;
+}
