@@ -6,8 +6,8 @@ A simple test form for a Corrade bot. Similar to the Test HUD in LSL. https://ma
 If you're not familiar with Corrade bots, check out https://corrade.grimore.org/
 
 ## Requirements
-A modern browser: Chome, Opera, Firefox, Safari...
-A webserver running PHP.
+- A modern browser: Chome, Opera, Firefox, Safari
+- A webserver running PHP.
 
 ## Setup
 
